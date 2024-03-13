@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.paragraf-container {
+  margin-left: 50px; /* veya başka bir değer */
+  margin-top: 20px; /* veya başka bir değer */
+}
+
+.title-container {
+  margin-left: 50px; /* veya başka bir değer */
+  margin-top: 20px; /* veya başka bir değer */
+}
+
+.container{
+    background: url(resim1.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 90px;
+    background: rgba(22, 112, 214, 0.4);
+}
+
+.navbar .logo{ 
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+
+.navbar .logo2{ 
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.navbar .logo2 a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #f3f3f3;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+   font-family: Roboto;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:#e65c0b;
+    border-radius: 2px;
+
+}
+
+.container .center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: rgb(193, 116, 28);
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2{
+    color: RGB(193, 116, 28);
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.buttons{
+    margin: 400px 530px;
+}
+
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background: rgb(207,96,88);
+    border: solid 1px red;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.buttons button:hover{
+    background: #fff;
+}
+
+/* SERVICES PAGE */
+.services {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .services .service {
+    padding: 30px;
+  }
+  
+  .services .service:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services .service h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--secondary-color);
+  }
+  
+  .services .service .icon img {
+    max-width: 100px;
+  }
+  
+  /* WORK PAGE */
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .portfolio .item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+  }
+  
+  .portfolio .item img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .portfolio .item .action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .portfolio .item:hover .action {
+    opacity: 1;
+  }
+  
+  .portfolio .item .action a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+  }
+  
+  /* CONTACT */
+  .iletisim {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .iletisim-form {
+    position: relative;
+    background: #f9f9f9;
+    width: calc(100% - 400px);
+    padding: 60px 40px 20px;
+  }
+  
+  .iletisim-form form {
+    width: 100%;
+  }
+  
+  .iletisim-form .row {
+    width: 100%;
+    display: flex;
+  }
+  
+  .iletisim-form .input50 {
+    width: 50%;
+    margin: 0 10px;
+  }
+  
+  .iletisim-form .input100 {
+    width: 100%;
+    margin: 0 10px;
+  }
+  
+  .iletisim-form .row input,
+  .iletisim-form .row textarea {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #111;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    resize: none;
+  }
+  
+  .iletisim-form .row textarea {
+    height: 150px;
+  }
+  
+  .iletisim-form .row input[type='submit'] {
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .iletisim-info {
+    width: 350px;
+    background: #f9f9f9;
+    padding: 60px 40px 20px;
+  }
+  
+  .iletisim-info .info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .iletisim-info .info-box .contact-icon {
+    width: 20px;
+    margin-right: 40px;
+  }
+  
+  .iletisim-info .info-box .details h4 {
+    color: var(--secondary-color);
+  }
+  
+  .iletisim-info .info-box .details p,
+  .iletisim-info .info-box .details a {
+    color: #111;
+  }
+  
+  @media (max-width: 1068px) {
+    .home-img {
+      display: none;
+    }
+  
+    .logo {
+      top: 10px;
+      left: 40px;
+      font-size: 1.5rem;
+    }
+  
+    section {
+      padding: 100px 40px;
+    }
+  
+    .navigation ul li a {
+      font-size: 2rem;
+    }
+  
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .iletisim {
+      flex-direction: column;
+    }
+  
+    .iletisim-form {
+      width: 100%;
+      padding: 30px 30px 20px;
+    }
+  
+    .iletisim-form .row {
+      flex-direction: column;
+    }
+  
+    .iletisim-form .input50,
+    .iletisim-form .input100 {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .iletisim-info {
+      width: 100%;
+      margin-top: 20px;
+      padding: 30px 30px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services {
+      grid-template-columns: 1fr;
+    }
+  
+    .services .service {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
